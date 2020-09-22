@@ -1,0 +1,26 @@
+Package: Regression
+Title: A dummy package that emulates basic functionalities of 'lr' package
+Version: 0.0.0.9000
+Authors@R: 
+    c(person(given = "Shahrukh",
+           family = "Iqbal",
+           role = c("aut", "cre"),
+           email = "shaiq681@student.liu.se"),
+           person(given = "Mowniesh", family = "Asokan", role = c("aut", "ctb"),
+           email = "mowas455@student.liu.se"))
+Description: The current package implements Linear Regression.
+License: GPL-3
+Encoding: UTF-8
+URL: https://github.com/shaiq681/LinReg
+BugReports: https://github.com/shaiq681/LinReg/issues
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Depends:
+    ggplot2,
+    gridExtra
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

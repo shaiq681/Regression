@@ -1,0 +1,78 @@
+---
+title: "Draft"
+author: "Shahrukh Iqbal and  Mowniesh Asokan"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Draft}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(Regression)
+```
+
+# Regression
+
+## Highlights
+
+- **Supports QR implementation**. Use ```use.qr = T``` for executing QR decomposition.
+- Implements the theme colour of [Linkoping University](https://liu.se/insidan/kommunikationsstod/grafiskprofil?l=en)
+
+## Workflow
+
+### Create a regression object
+
+```{r, eval=FALSE, echo=FALSE, results='hide'}
+
+lr_model <- linreg(formula = Sepal.Length~Petal.Width, data = iris)
+```
+
+#### Print the Coefficients
+
+```{r, eval=FALSE, echo=FALSE}
+
+lr_model$print()
+```
+
+#### Plot the residuals
+
+```{r, eval=FALSE, echo=FALSE}
+
+lr_model$plot()
+```
+
+#### Get the Residuals Vector
+
+```{r, eval=FALSE, echo=FALSE}
+
+lr_model$resid()
+```
+
+#### Get the Predictions
+
+```{r, eval=FALSE, echo=FALSE}
+
+lr_model$pred()
+```
+
+#### Get the Coefficients of Beta
+
+```{r, eval=FALSE, echo=FALSE}
+
+lr_model$coef()
+```
+
+#### Print the summary
+
+```{r, eval=FALSE, echo=FALSE}
+
+lr_model$coef()
+```
