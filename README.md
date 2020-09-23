@@ -7,10 +7,19 @@
 
 An R Package to implement ls() style regression.
 
-## Usage
-
-- For creating a new 
+## Installation
 
 ```r
-
+devtools::install_github("shaiq681/Regression")
 ```
+
+## Usage
+
+- For creating a new Regression Object
+
+```r
+linreg_obj <- linreg$new(formula= Sepal.Length~Petal.Width, data = iris, use.qr = F)
+```
+
+
+
