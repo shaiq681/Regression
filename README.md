@@ -3,6 +3,8 @@
 
 [![Build Status](https://travis-ci.org/shaiq681/Regression.svg?branch=master)](https://travis-ci.org/shaiq681/Regression)
 
+**NOTE** : Possible cause of Build failure is because of NAMESPACE issue with ImportFrom(methods,new)
+
 ## Introduction
 
 An R Package to implement ls() style regression.
